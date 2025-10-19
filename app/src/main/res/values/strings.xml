@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SignalViewer</string>
+    <string name="button_goToGraphs_name">Go to Graphs</string>
+    <string name="edit_Window_name"> </string>
+    <string name="text_amplitude_name"> Amplitude </string>
+    <string name="text_frequency_name"> Frequency </string>
+    <string name="text_phase_name"> Phase </string>
+    <string name="text_duration_name"> Duration </string>
+</resources>
