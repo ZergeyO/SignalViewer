@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 Double Ph = Double.valueOf(Phase.getText().toString());
                 Log.d(LOG_TAG, "Ph: " + Phase.getText().toString());
                 Double Dur = Double.valueOf(Duration.getText().toString());
-                Log.d(LOG_TAG, "Ph: " + Duration.getText().toString());
+                Log.d(LOG_TAG, "Dur: " + Duration.getText().toString());
 
                 intent.putExtra(STR_KEY_AMP, Amp);
                 intent.putExtra(STR_KEY_FREQ, Freq);
@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
             catch (Exception e) {
                 Toast.makeText(this, "Неккоректный ввод данных", Toast.LENGTH_LONG).show();
             }
-            ;
         });
     }
 
