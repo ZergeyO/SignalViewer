@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(STR_KEY_AMP, Amp);
                 intent.putExtra(STR_KEY_FREQ, Freq);
                 intent.putExtra(STR_KEY_PHASE, Ph);
-                intent.putExtra(STR_KEY_PHASE, Dur);
+                intent.putExtra(STR_KEY_DUR, Dur);
 
                 startActivity(intent);
                 Log.d(LOG_TAG, "New Activity");

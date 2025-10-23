@@ -65,7 +65,7 @@ public class GraphActivity extends AppCompatActivity {
         Amplitude =(float) intent.getDoubleExtra(MainActivity.STR_KEY_AMP,1);
         Frequency =(float) intent.getDoubleExtra(MainActivity.STR_KEY_FREQ,100);
         Phase =(float) intent.getDoubleExtra(MainActivity.STR_KEY_PHASE,0);
-        Duration =(float) intent.getDoubleExtra(MainActivity.STR_KEY_PHASE,2);
+        Duration =(float) intent.getDoubleExtra(MainActivity.STR_KEY_DUR,2);
 
         numSamples = (int) (Sample_Rate * Duration);
         if(!FFT.isPowerOfTwo(numSamples)){
@@ -96,11 +96,11 @@ public class GraphActivity extends AppCompatActivity {
         //Вывод графиков
 
         LineDataSet dataSet_signal = new LineDataSet(signal, SIGNAL_LABLE);
-        dataSet_signal.setColor(getResources().getColor(android.R.color.black));
+        dataSet_signal.setColor(getResources().getColor(android.R.color.white));
         dataSet_signal.setValueTextColor(getResources().getColor(android.R.color.holo_blue_light));
 
         LineDataSet dataSet_spectrum = new LineDataSet(spectrum, SPECTRUM_LABLE);
-        dataSet_spectrum.setColor(getResources().getColor(android.R.color.black));
+        dataSet_spectrum.setColor(getResources().getColor(android.R.color.white));
         dataSet_spectrum.setValueTextColor(getResources().getColor(android.R.color.holo_blue_light));
 
         dataSet_signal.setDrawCircles(false);
